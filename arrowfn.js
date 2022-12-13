@@ -19,7 +19,11 @@ this.bmarks = bmarks;
 eligibility(elScore)
 {
 return (elAge) => {
-  return this.bmarks>=40 && this.age>=elAge ? true : false;}
+
+if( this.bmarks>=40 && this.age>=elAge) 
+console.log(`${this.name} is eligible for placements`)
+else
+console.log(`${this.name} is NOT eligible for placements`)}
 }
 }
 
